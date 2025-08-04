@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kanban Board</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <h1 class="board-heading">Kanban Board</h1>
+    <button id="theme-toggle" class="theme-toggle">🌙 Dark Mode</button>
+    <div class="task-input-bar">
+      <input
+        type="text"
+        id="new-task-input"
+        placeholder="Enter a new task..."
+      />
+      <button onclick="addNewTask()">Add Task</button>
+    </div>
+
+    <div class="board">
+      <div class="column" data-column>
+        <h2>Todo</h2>
+      </div>
+      <div class="column" data-column>
+        <h2>In Progress</h2>
+      </div>
+      <div class="column" data-column>
+        <h2>Done</h2>
+      </div>
+    </div>
+
+    <div class="page-note">
+      📝 Note: Drag and drop tasks between columns. Right-click cards to edit or
+      delete.
+    </div>
+
+    <script src="index.js"></script>
+  </body>
+</html>
